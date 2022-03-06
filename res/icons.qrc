@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/fontawesome/black/docker.svg</file>
+        <file>icons/fontawesome/black/layer-group.svg</file>
+        <file>icons/fontawesome/black/database.svg</file>
+        <file>icons/fontawesome/black/cube.svg</file>
+        <file>icons/fontawesome/black/cubes.svg</file>
+        <file>icons/fontawesome/black/hard-drive.svg</file>
+    </qresource>
+</RCC>
