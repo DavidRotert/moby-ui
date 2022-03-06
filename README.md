@@ -14,6 +14,7 @@ Just in planning + experimenting phase!
 - [ ] Docker API binding
 - [ ] Bringing the UI to life
 - [ ] Step by step expansion of the UI
+- [ ] A custom logo
 
 ### Things I am planning to add
 
