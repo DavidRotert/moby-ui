@@ -3,6 +3,10 @@ This is a hobby project for learning C++ and UI development with Qt. It's goal i
 
 ## Project status
 
+A first look:
+
+![grafik](https://user-images.githubusercontent.com/27674913/156941399-90e84728-2fb4-4a35-ada1-d89fbeed42f5.png)
+
 Just in planning + experimenting phase!
 
 - [x] Beautiful but non functioning UI start page
@@ -10,6 +14,7 @@ Just in planning + experimenting phase!
 - [ ] Docker API binding
 - [ ] Bringing the UI to life
 - [ ] Step by step expansion of the UI
+- [ ] A custom logo
 
 ### Things I am planning to add
 
