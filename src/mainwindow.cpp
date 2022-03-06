@@ -54,6 +54,7 @@ void MainWindow::clickedNavRegistries() {
 }
 
 void MainWindow::clickedNavItem(QAbstractButton *btn) {
+    // Don't allow to uncheck current nav item
     if (btn->isCheckable() && !btn->isChecked()) {
         btn->toggle();
         return;
