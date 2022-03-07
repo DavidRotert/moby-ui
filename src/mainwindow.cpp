@@ -3,11 +3,12 @@
 
 #include <QMessageBox>
 
-MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
+MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent) , ui(new Ui::MainWindow)
 {
     this->ui->setupUi(this);
+
+    this->ui->nav_button_containers->toggle();
+    this->clickedNavContainers();
 }
 
 MainWindow::~MainWindow()

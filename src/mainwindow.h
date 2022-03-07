@@ -13,9 +13,10 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
+    MainWindow(QWidget* parent = nullptr);
     ~MainWindow();
 
+    void init();
 
 private slots:
     void clickedNavContainers();
@@ -25,7 +26,7 @@ private slots:
     void clickedNavRegistries();
 
 private:
-    Ui::MainWindow *ui;
+    Ui::MainWindow* ui;
 
     void clickedNavItem(QAbstractButton* btn);
 
