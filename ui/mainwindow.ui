@@ -20,7 +20,8 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(241, 241, 241);</string>
+   <string notr="true">/*background-color: rgb(241, 241, 241);*/
+background-color: rgb(246, 245, 244);</string>
   </property>
   <property name="unifiedTitleAndToolBarOnMac">
    <bool>false</bool>
@@ -183,7 +184,7 @@
             </property>
             <layout class="QVBoxLayout" name="nav_widget_left_layout">
              <property name="leftMargin">
-              <number>4</number>
+              <number>0</number>
              </property>
              <property name="topMargin">
               <number>4</number>
@@ -215,7 +216,7 @@ QAbstractButton:hover {
 	border-top-color: transparent;
 	border-bottom-color: transparent;
 
-	background-color: rgb(218, 234, 255);
+	background-color: rgb(209, 230, 255);
 }
 
 QAbstractButton:checked {

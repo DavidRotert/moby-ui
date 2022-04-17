@@ -21,7 +21,7 @@ void MainWindow::clickedNavContainers() {
 
     this->clickedNavItem(btn);
 
-    //TODO: remove this
+    //TODO: remove this in production and replace with real daemon check
     this->ui->docker_daemon_status_logo->setStyleSheet("color: rgb(224, 27, 36);");
     this->ui->docker_daemon_status_text->setText("Docker daemon not running");
 }
@@ -54,7 +54,7 @@ void MainWindow::clickedNavRegistries() {
     this->clickedNavItem(btn);
 }
 
-void MainWindow::clickedNavItem(QAbstractButton *btn) {
+void MainWindow::clickedNavItem(QAbstractButton* btn) {
     // Don't allow to uncheck current nav item
     if (btn->isCheckable() && !btn->isChecked()) {
         btn->toggle();
