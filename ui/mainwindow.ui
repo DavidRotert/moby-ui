@@ -20,8 +20,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">/*background-color: rgb(241, 241, 241);*/
-background-color: rgb(246, 245, 244);</string>
+   <string notr="true">background-color: rgb(246, 245, 244);</string>
   </property>
   <property name="unifiedTitleAndToolBarOnMac">
    <bool>false</bool>
@@ -160,8 +159,11 @@ background-color: rgb(246, 245, 244);</string>
         </widget>
        </item>
        <item>
-        <widget class="QWidget" name="middle_frame" native="true">
+        <widget class="QWidget" name="middle_widget" native="true">
          <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
           <property name="leftMargin">
            <number>0</number>
           </property>
@@ -176,6 +178,12 @@ background-color: rgb(246, 245, 244);</string>
           </property>
           <item>
            <widget class="QWidget" name="nav_widget_left" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>0</height>
+             </size>
+            </property>
             <property name="maximumSize">
              <size>
               <width>250</width>
@@ -183,11 +191,20 @@ background-color: rgb(246, 245, 244);</string>
              </size>
             </property>
             <layout class="QVBoxLayout" name="nav_widget_left_layout">
+             <property name="spacing">
+              <number>0</number>
+             </property>
              <property name="leftMargin">
               <number>0</number>
              </property>
              <property name="topMargin">
-              <number>4</number>
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>5</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
              </property>
              <item>
               <widget class="QWidget" name="nav_buttons" native="true">
@@ -221,28 +238,32 @@ QAbstractButton:hover {
 
 QAbstractButton:checked {
 	border-left-color: rgb(56, 145, 255);
-	border-top-color: rgb(56, 145, 255);
+	/*border-top-color: rgb(56, 145, 255);
 	border-bottom-color: rgb(56, 145, 255);
-	border-right-color: rgb(56, 145, 255);
+	border-right-color: rgb(56, 145, 255);*/
 	
 	background-color: rgb(209, 230, 255);
+}
+
+QAbstractButton:disabled {
+	color: black;
 }</string>
                </property>
                <layout class="QVBoxLayout" name="nav_buttons_layout">
                 <property name="spacing">
-                 <number>0</number>
+                 <number>5</number>
                 </property>
                 <property name="leftMargin">
                  <number>0</number>
                 </property>
                 <property name="topMargin">
-                 <number>0</number>
+                 <number>5</number>
                 </property>
                 <property name="rightMargin">
                  <number>0</number>
                 </property>
                 <property name="bottomMargin">
-                 <number>0</number>
+                 <number>5</number>
                 </property>
                 <item>
                  <widget class="QToolButton" name="nav_button_containers">
@@ -260,7 +281,9 @@ QAbstractButton:checked {
                   </property>
                   <property name="icon">
                    <iconset resource="../res/icons.qrc">
-                    <normaloff>:/icons/fontawesome/black/cubes.svg</normaloff>:/icons/fontawesome/black/cubes.svg</iconset>
+                    <normaloff>:/icons/fontawesome/black/cubes.svg</normaloff>
+                    <disabledoff>:/icons/fontawesome/black/cubes.svg</disabledoff>
+                    <disabledon>:/icons/fontawesome/black/cubes.svg</disabledon>:/icons/fontawesome/black/cubes.svg</iconset>
                   </property>
                   <property name="iconSize">
                    <size>
@@ -292,7 +315,8 @@ QAbstractButton:checked {
                   </property>
                   <property name="icon">
                    <iconset resource="../res/icons.qrc">
-                    <normaloff>:/icons/fontawesome/black/layer-group.svg</normaloff>:/icons/fontawesome/black/layer-group.svg</iconset>
+                    <normaloff>:/icons/fontawesome/black/layer-group.svg</normaloff>
+                    <disabledoff>:/icons/fontawesome/black/layer-group.svg</disabledoff>:/icons/fontawesome/black/layer-group.svg</iconset>
                   </property>
                   <property name="checkable">
                    <bool>true</bool>
@@ -318,7 +342,8 @@ QAbstractButton:checked {
                   </property>
                   <property name="icon">
                    <iconset resource="../res/icons.qrc">
-                    <normaloff>:/icons/fontawesome/black/hard-drive.svg</normaloff>:/icons/fontawesome/black/hard-drive.svg</iconset>
+                    <normaloff>:/icons/fontawesome/black/hard-drive.svg</normaloff>
+                    <disabledoff>:/icons/fontawesome/black/hard-drive.svg</disabledoff>:/icons/fontawesome/black/hard-drive.svg</iconset>
                   </property>
                   <property name="checkable">
                    <bool>true</bool>
@@ -344,7 +369,8 @@ QAbstractButton:checked {
                   </property>
                   <property name="icon">
                    <iconset resource="../res/icons.qrc">
-                    <normaloff>:/icons/fontawesome/black/docker.svg</normaloff>:/icons/fontawesome/black/docker.svg</iconset>
+                    <normaloff>:/icons/fontawesome/black/docker.svg</normaloff>
+                    <disabledoff>:/icons/fontawesome/black/docker.svg</disabledoff>:/icons/fontawesome/black/docker.svg</iconset>
                   </property>
                   <property name="checkable">
                    <bool>true</bool>
@@ -367,7 +393,8 @@ QAbstractButton:checked {
                   </property>
                   <property name="icon">
                    <iconset resource="../res/icons.qrc">
-                    <normaloff>:/icons/fontawesome/black/database.svg</normaloff>:/icons/fontawesome/black/database.svg</iconset>
+                    <normaloff>:/icons/fontawesome/black/database.svg</normaloff>
+                    <disabledoff>:/icons/fontawesome/black/database.svg</disabledoff>:/icons/fontawesome/black/database.svg</iconset>
                   </property>
                   <property name="iconSize">
                    <size>
@@ -403,7 +430,35 @@ QAbstractButton:checked {
            </widget>
           </item>
           <item>
-           <widget class="QWidget" name="content_widget" native="true"/>
+           <widget class="QWidget" name="content_widget" native="true">
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QFrame" name="content_frame">
+               <property name="frameShape">
+                <enum>QFrame::NoFrame</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
           </item>
          </layout>
         </widget>
@@ -547,22 +602,6 @@ border-top-color: rgb(222, 221, 218);</string>
    </hints>
   </connection>
   <connection>
-   <sender>nav_button_volumes</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>clickedNavVolumes()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>124</x>
-     <y>171</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>499</x>
-     <y>349</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
    <sender>nav_button_compose</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
@@ -571,6 +610,22 @@ border-top-color: rgb(222, 221, 218);</string>
     <hint type="sourcelabel">
      <x>124</x>
      <y>214</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>499</x>
+     <y>349</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>nav_button_volumes</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clickedNavVolumes()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>124</x>
+     <y>171</y>
     </hint>
     <hint type="destinationlabel">
      <x>499</x>

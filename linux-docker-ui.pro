@@ -9,13 +9,19 @@ CONFIG += c++20
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    src/containerlistitem.cpp \
+    src/containerslistpage.cpp \
     src/main.cpp \
     src/mainwindow.cpp
 
 HEADERS += \
+    src/containerlistitem.h \
+    src/containerslistpage.h \
     src/mainwindow.h
 
 FORMS += \
+    ui/containerlistitem.ui \
+    ui/containerslistpage.ui \
     ui/mainwindow.ui
 
 # Default rules for deployment.

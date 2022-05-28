@@ -6,5 +6,13 @@
         <file>icons/fontawesome/black/cube.svg</file>
         <file>icons/fontawesome/black/cubes.svg</file>
         <file>icons/fontawesome/black/hard-drive.svg</file>
+        <file>icons/fontawesome/red/layer-group-red.svg</file>
+        <file>icons/fontawesome/blue/circle-play-solid.png</file>
+        <file>icons/fontawesome/blue/circle-stop-solid.png</file>
+        <file>icons/fontawesome/blue/trash-can-solid.png</file>
+        <file>icons/fontawesome/red/layer-group-red.png</file>
+        <file>icons/fontawesome/red/layer-group-red_30x30.png</file>
     </qresource>
+    <qresource prefix="/icons/fontawesome/red"/>
+    <qresource prefix="/icons/fontawesome/blue"/>
 </RCC>
